@@ -1,0 +1,11 @@
+FROM python:3.7.3
+
+RUN echo "alias ll='ls -alG'" >> /root/.bashrc
+
+COPY . dbwebtool
+
+RUN pip install --no-cache-dir -r requirements.txt
+WORKDIR webdb
+EXPOSE 8886
+
+CMD ["/webdb/startwebdb.py"]

@@ -1,0 +1,17 @@
+aiohttp
+async-timeout
+aiohttp_debugtoolbar
+envparse
+attrdict
+faker
+
+aiosqlite
+aioredis
+aiopg
+asyncpg==0.17.0
+sqlalchemy
+
+aiohttp_cors
+
+
+

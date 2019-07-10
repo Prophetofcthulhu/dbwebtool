@@ -1,0 +1,176 @@
+/*li a {*/
+    /*color: green;*/
+/*}*/
+
+.added {
+    color: blue;
+    font-weight: bold;
+}
+.removed {
+    color: red;
+    font-weight: bold;
+}
+.error {
+    color: red;
+    font-weight: bold;
+}
+.warn {
+    color: yellow;
+    font-weight: bold;
+}
+.same {
+    color: green;
+    font-weight: bold;
+}
+
+/* Background-color of the odd rows */
+.table-container tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+.dialog {
+    /*background-color: #a6a6a6;*/
+    border: 2px;
+}
+.queue_pupup {
+    background-color: grey;
+}
+/*
+ #f7b955
+*/
+
+.tr_data {
+    background-color: white;
+    font-weight: bold;
+}
+.title_line {
+    background-color: yellow;
+    color: red;
+}
+
+.small_bold {
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.middle {
+    vert-align: middle;
+}
+.top {
+    vert-align: top;
+}
+
+.title_icon {
+    color: #5e5e5e;
+    font-weight: bold;
+    font-size: 80%;
+}
+.key_primary {
+    color: red;
+    background-color: red;
+    font-weight: bold;
+    font-size: 70%;
+}
+
+.key_cluster_asc {
+    color: brown;
+    background-color: brown;
+    font-weight: bold;
+    font-size: 70%;
+}
+
+.key_cluster_desc {
+    color: blue;
+    font-weight: bold;
+    font-size: 80%;
+    background-color: blue;
+}
+
+.title_td_left {
+    text-align: left;
+    border-left-color: yellow;
+}
+.title_td_right {
+    text-align: right;
+    border-left-color: yellow;
+}
+
+.content_table {
+    /*width: 400px;*/
+    /*height:80px;*/
+    /*position: fixed;*/
+    overflow: hidden;
+    overflow-x: scroll;
+    white-space:nowrap;
+    /*top: 160px;*/
+}
+
+.header_table {
+    background: lightgreen;
+    /*position: absolute;*/
+ position: fixed;
+ right: 0;
+    top: 0;
+ width: 100%;
+}
+.vertical_aligner {
+    height: 40px;
+    /*max-height: 180px;*/
+    /*min-height: 180px;*/
+    /*background-color: salmon;*/
+}
+
+.header_table + .content_table {
+    /*padding-top: 102px;*/
+}
+
+.thead {
+    background-color: lightgreen;
+}
+
+.text_item {
+    font-weight: bold;
+    /*width: 200px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+     resize: horizontal;
+
+}
+
+.maroon {color: maroon;}
+.red {color: red;}
+.magenta {color: magenta;}
+.fuchsia {color: fuchsia;}
+.pink {color: #FAA;}
+.orange {color: orange;}
+.yellow {color: yellow;}
+.lime {color: lime;}
+.green {color: green;}
+.olive {color: olive;}
+.teal {color: teal;}
+.cyan {color: cyan;}
+.aqua {color: aqua;}
+.blue {color: blue;}
+.navy {color: navy;}
+.purple {color: purple;}
+.black {color: black;}
+.gray {color: gray;}
+.silver {color: silver;}
+.white {color: white;}
+
+.left {text-align: left ! important;}
+.center {text-align: center ! important;}
+.right {text-align: right ! important;}

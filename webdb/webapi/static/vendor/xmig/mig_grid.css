@@ -1,0 +1,27 @@
+:root {
+  --color: #ab0fff;
+  /*--rowNum: 10;*/
+  --colNum: 3;
+  --gridHeight: 120px;
+}
+
+.grid_wrapper {
+  display: grid;
+  /*width: 1000px;*/
+  /*grid-template-rows: repeat(var(--rowNum), auto);*/
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-template-columns: repeat(var(--colNum), auto);
+  gap: 5px;
+}
+
+.grid-item {
+  grid-column-start: auto;
+  grid-row-start: auto;
+}
+
+.grid-item {
+    /*box-sizing: border-box;*/
+    background-color: yellowgreen;
+    border: 4px solid #2B91AF;
+}
+/*calc*/

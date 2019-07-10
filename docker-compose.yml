@@ -1,0 +1,77 @@
+
+  dbwebtool:
+    build: .
+    ports:
+      - '8000:8886'
+  postgre:
+    build: .run/dockers/postgres_db
+    ports:
+      - 54832:5432
+    volumes:
+     - /storage/docker/postgresql:/var/lib/postgresql/data   #please insert right volume here
+  PGA:
+    ports:
+      - 9001:80
+      - 443:443
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=a@a.a
+      - PGADMIN_DEFAULT_PASSWORD=a
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    container_name: pgadmin
+    image: dpage/pgadmin4:latest
+  cassandra:
+    container_name: cassandraDB
+    image: library/cassandra
+    volumes:
+      - cassandra:/var/lib/cassandra
+    ports:
+      - '7000:7000'
+      - '7001:7001'
+      - '7199:7199'
+      - '9042:9042'
+      - '9160:9160'
+      - '9404:9404'
+  scylladb:
+    container_name: scyllaDB_Test
+    image: scylladb/scylla
+    volumes:
+      - scylla:/var/lib/scylla/commitlog
+    ports:
+      - '6000:7000'
+      - '6001:7001'
+      - '6042:9042'
+      - '6160:9160'
+      - '6180:9180'
+      - '10000:10000'
+#  7000-7001/tcp, 9042/tcp, 9160/tcp, 9180/tcp, 10000/tcp
+  mysql:
+    container_name: test-mysql1
+    environment:
+      - MYSQL_ROOT_PASSWORD=***
+      - MYSQL_PASSWORD=***
+      - MYSQL_USER=***
+      - MYSQL_DATABASE=test
+#      command: --default-authentication-plugin=mysql_native_password
+    ports:
+          - '6603:3306'
+    volumes:
+      - /root/docker/test-mysql/conf.d:/etc/mysql/conf.d
+      - /storage/docker/mysql-datadir:/var/lib/mysqld
+    image: mysql
+  sphinx:
+    container_name: test-sphinx
+    ports:
+        - '9306:9306'
+#      volumes:
+#        - /root/docker/test-mysql/conf.d:/etc/mysql/conf.d
+#        - /storage/docker/mysql-datadir:/var/lib/mysqld
+    image: stefobark/sphinxdocker
+  mariaDB:
+    image: mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=***
+    container_name: mariaDB
+    ports:
+      - 9999:8080
+

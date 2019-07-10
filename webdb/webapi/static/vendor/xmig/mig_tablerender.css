@@ -1,0 +1,221 @@
+
+.mytable-container {
+    text-align: left;
+    overflow: hidden;
+    /*overflow-x: scroll;*/
+    /*width: 80%;*/
+    margin: 10px;
+    /*display: table;*/
+    padding: 0
+    /*padding: 0 0 8em 0;*/
+}
+
+.mytable-container td {
+    font-weight: normal;
+    font-size: 1em;
+    /*min-width: 135px;*/
+}
+.mytable-container table {
+    border-collapse: collapse;
+    /*width: 695px;*/
+}
+
+thead {
+    position: relative;
+}
+
+.mytable-container td {
+    /*padding-bottom: 2%;*/
+    /*padding-top: 2%;*/
+
+    /*padding-bottom: 1%;*/
+    /*padding-top: 1%;*/
+
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.mytable-container th {
+    padding-bottom: 0.1%;
+    padding-top: 0.1%;
+    background-color: red;
+    /*padding-bottom: 1%;*/
+    /*padding-top: 1%;*/
+
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+/* Background-color of the odd rows */
+.mytable-container tr:nth-child(odd) {
+    background-color: #f8f8f8;
+}
+
+
+.mytable-container .fa-volume-up{
+    color: #2f426f;
+    cursor: pointer;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.mytable-container .fa-volume-up:hover{
+    color: #39536f;
+}
+
+.nodecorator {
+    text-decoration: none;
+}
+
+.tbr-button {
+    margin-top: 2px;
+    margin-bottom: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 4px 8px;
+    min-width: 30px;
+
+}
+.audio_control_wrapper {
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: #2B91AF;
+}
+
+div .word_card {
+    padding-top: 10px;
+    min-height: 140px;
+    text-align: left;
+}
+
+table .word_card {
+}
+
+tr .word_card {
+    font-size: 140%;
+    text-align: left;
+    height: 20px;
+}
+
+.oval {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*padding: 2px;*/
+    white-space: nowrap;
+}
+.oval12_noborder {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: nowrap;
+}
+
+.oval12_noborder_left {
+    /*-webkit-border-radius: 12px;*/
+    /*-moz-border-radius: 12px;*/
+    /*border-radius: 12px;*/
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: nowrap;
+}
+.oval12_noborder_right {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: nowrap;
+}
+
+.oval12_noborder_skip {
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 6px;
+    padding-top: 0;
+    padding-bottom: 0;
+    white-space: nowrap;
+}
+
+
+.brown {
+    background-color: lightsalmon;
+}
+
+.grayblack {
+    background-color: #343434;
+}
+
+.tag_wrapper {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*padding: 2px;*/
+    white-space: nowrap;
+    background-color: #cfcfcf;
+}
+
+.listname_wrapper {
+    -webkit-border-radius: 11px;
+    -moz-border-radius: 11px;
+    border-radius: 11px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /*padding: 2px;*/
+    white-space: nowrap;
+    background-color: #cfcfcf;
+}
+
+
+/*.wide_button {*/
+    /*-webkit-border-radius: 10px;*/
+    /*-moz-border-radius: 10px;*/
+    /*border-radius: 10px;*/
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
+    /*border-color: #fff;*/
+    /*margin: 0;*/
+    /*padding-left: 8px;*/
+    /*padding-right: 4px;*/
+    /*padding-top: 0;*/
+    /*padding-bottom: 0;*/
+    /*background-color: cornflowerblue;*/
+/*}*/
+
+
